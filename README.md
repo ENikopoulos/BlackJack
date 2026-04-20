@@ -1,90 +1,117 @@
-# 🃏 Blackjack Game (Tkinter GUI Version)
+# 🃏 Blackjack (Python Project)
 
-A graphical Blackjack game built with Python and Tkinter, featuring an improved game engine, proper card handling, and a user-friendly interface.
-
----
-
-## 📌 Overview
-
-This project is a GUI-based implementation of Blackjack where a player competes against a dealer. It improves upon a basic CLI version by introducing:
-
-- A graphical interface using Tkinter  
-- A more structured game engine  
-- Proper Blackjack rules (Ace handling, dealer behavior)  
-- Automatic deck reshuffling  
-- Real-time game state updates  
+This repository contains two implementations of the classic Blackjack card game, built in Python.  
+It showcases the evolution of the project from a simple command-line game to a more structured graphical application.
 
 ---
 
-## 🎮 Features
+## 📌 About the Project
 
-- 🖥️ **Graphical User Interface (GUI)** using Tkinter  
-- 🃏 **Dynamic card dealing system**  
-- ♠️ **Accurate hand value calculation with Ace adjustment**  
-- 🎯 **Blackjack detection (2-card 21)**  
-- 💥 **Bust detection for player and dealer**  
-- 🔄 **Automatic deck reshuffling when low on cards**  
-- 🎲 **Dealer follows standard rule (hits until 17)**  
-- 💰 **Balance tracking system**  
-- 🔒 **Round state management (prevents invalid actions)**  
-- 🎭 **Hidden dealer card during gameplay**  
+The purpose of this project is to explore:
+
+- Game logic design  
+- Object-oriented programming (OOP)  
+- State management  
+- User interaction (CLI → GUI)  
+- Progressive refactoring and improvement  
+
+Rather than building everything at once, the project is split into versions to reflect learning and iteration.
+
+---
+
+## 📂 Repository Structure
+- ### BlackJack_v1  Initial CLI-based implementation
+- [Black Jack v1 (README)](/BlackJack_v1/README.md)
+- ### BlackJack_v2  Improved version with Tkinter GUI
+- [Black Jack v2 (README)](/BlackJack_v2/README.md)
+---
+## 🔁 Version Overview
+
+### 🧩 Version 1 — CLI (BlackJack_v1)
+
+The first version is a terminal-based Blackjack game.
+
+- Focuses on core gameplay logic  
+- Uses user input for interaction  
+- Implements betting and round flow  
+- Introduces basic class structure (`Player`, `Card`, `Deck`)  
+
+👉 This version emphasizes **functionality over structure**
+
+---
+
+### 🖥️ Version 2 — GUI (BlackJack_v2)
+
+The second version builds on v1 and introduces a graphical interface.
+
+- Built with `tkinter`  
+- Uses buttons instead of text input  
+- Improved card handling and scoring  
+- Better rule implementation (Ace handling, Blackjack detection)  
+- Basic game state management  
+
+👉 This version emphasizes **structure, usability, and cleaner design**
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-### 🧩 Object-Oriented Programming (OOP)
-- Classes used:
-  - `Card`
-  - `Deck`
-  - `Hand`
-  - `BlackjackGUI`
-- Clear separation of responsibilities between components
+Across both versions:
+
+- **Object-Oriented Programming (OOP)**
+- **Control Flow & Game Loops**
+- **Data Structures** (lists, tuples, dictionaries)
+- **Algorithmic Thinking** (card values, scoring, dealer logic)
+- **Input Handling & Validation**
+- **Randomization** (`shuffle`)
+- **GUI Development** (Tkinter)
+- **State Management**
 
 ---
 
-### 🎲 Data Structures
-- **Tuples** → suits and ranks  
-- **Dictionaries** → card values  
-- **Lists** → deck and hands  
+## 🚀 Project Evolution
+
+This project reflects a progression in development approach:
+
+| Stage | Focus |
+|------|------|
+| v1 | Make it work |
+| v2 | Make it better |
 
 ---
 
-### 🔁 Control Flow & Game Logic
-- Conditional logic for:
-  - Hit / Stand decisions  
-  - Win / loss / push outcomes  
-- Dealer AI logic (draw until 17)  
-- Round lifecycle management  
+## 🔮 Future Improvements
+
+Planned or possible enhancements:
+
+- Full betting system in GUI  
+- Advanced Blackjack features:
+  - Split  
+  - Double Down  
+  - Insurance  
+- Better UI (card images, layout, animations)  
+- Separation of game engine from interface  
+- Sound effects and polish  
 
 ---
 
-### 🧮 Algorithmic Thinking
-- Dynamic hand value calculation  
-- Multi-Ace adjustment strategy  
-- Game outcome evaluation  
+## 🛠️ Technologies
+
+- Python 3  
+- Tkinter (GUI)  
+- Standard Library (`random`)  
 
 ---
 
-### 🖼️ GUI Development
-- Built with `tkinter`
-- Widgets used:
-  - `Label`
-  - `Button`
-- Event-driven programming (button callbacks)
+## 📖 Notes
+
+This is a learning project, and each version intentionally reflects different stages of development.  
+The differences between `v1` and `v2` are part of the value of the repository.
 
 ---
 
-### 🔄 State Management
-- Tracks:
-  - Player balance  
-  - Current bet  
-  - Game state (`game_over`)  
-- Controls flow between rounds  
+## 👤 Author
+
+Developed as part of practicing Python, game logic, and GUI programming.
 
 ---
-
-### 🔀 Randomization
-```python
-import random
-random.shuffle(deck)
